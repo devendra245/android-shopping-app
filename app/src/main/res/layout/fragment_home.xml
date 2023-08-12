@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical"
+    android:background="@color/orchid">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- ViewPager to display the images -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:contentDescription="@string/images">
+
+    <!-- Layout for the ViewPager's item (item_image.xml) -->
+    <include layout="@layout/item_image" />
+    </androidx.viewpager.widget.ViewPager>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Men's Section"
+        android:layout_below="@+id/viewPager"
+        android:id="@+id/menssection"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/browser_actions_bg_grey"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menssection"
+        android:id="@+id/mens">
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:id="@+id/shirt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/go_to_shirt"
+            android:src="@drawable/img_7"
+            android:scaleType="centerCrop"/>
+
+
+    <ImageButton
+        android:backgroundTint="@color/white"
+        android:id="@+id/jean"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/jean"
+        android:contentDescription="@string/go_to_jean"
+        android:scaleType="centerCrop"/>
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:id="@+id/shoes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/go_to_shoes"
+            android:src="@drawable/shoes"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Women's Setion"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/mens"
+        android:id="@+id/womenssection"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/browser_actions_bg_grey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/womenssection"
+        android:id="@+id/womens">
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:id="@+id/gtop"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/go_to_shirt"
+            android:src="@drawable/img_1"
+            android:scaleType="centerCrop"/>
+
+
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:id="@+id/gjean"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/img"
+            android:contentDescription="@string/go_to_jean"
+            android:scaleType="centerCrop"/>
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:id="@+id/gshoes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/go_to_shirt"
+            android:src="@drawable/img_3"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accessories Section"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/womens"
+        android:id="@+id/accessoriessection"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/browser_actions_bg_grey"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accessoriessection"
+        android:id="@+id/shoessec">
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:id="@+id/watch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/go_to_shirt"
+            android:src="@drawable/img_4"
+            android:scaleType="centerCrop"/>
+
+
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:id="@+id/swatch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="105dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/img_5"
+            android:contentDescription="@string/go_to_shoes"
+            android:scaleType="centerCrop"/>
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:id="@+id/spectacles"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/go_to_shirt"
+            android:src="@drawable/img_6"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

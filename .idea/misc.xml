@@ -1,0 +1,23 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/DEVENDER/AndroidStudioProjects/MyApplication4/app/src/main/res/drawable/lemon_squeeze.xml" value="0.1205" />
+        <entry key="..\:/Users/DEVENDER/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_main.xml" value="0.1859375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.01965901183020181" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
